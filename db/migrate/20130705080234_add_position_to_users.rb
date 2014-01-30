@@ -1,4 +1,6 @@
 class AddPositionToUsers < ActiveRecord::Migration
+  class User < ActiveRecord::Base; end
+
   def change
     add_column :users, :position, :integer
 

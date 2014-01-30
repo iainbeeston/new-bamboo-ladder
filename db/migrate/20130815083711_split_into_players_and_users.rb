@@ -1,4 +1,6 @@
 class SplitIntoPlayersAndUsers < ActiveRecord::Migration
+  class User < ActiveRecord::Base; end
+
   def self.up
     rename_table :users, :players
     create_table :users do |t|

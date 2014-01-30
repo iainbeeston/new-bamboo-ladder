@@ -1,4 +1,6 @@
 class AddTimestamps < ActiveRecord::Migration
+  class User < ActiveRecord::Base; end
+
   START_OF_TIME = Time.parse('2013-07-20 00:00:00')
 
   def change
